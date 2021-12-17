@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mis recetas | Contactar</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mis recetas de cocina casera">
+    <meta name="keywords" content="recetas, cocina casera, gastronomía">
+    <link rel="shortcut icon" href="huevo-frito.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="container mx-auto px-10">
+        <header class="flex justify-center my-5">
+            <img class="h-16 sm:h-28" src="images/logo.png" alt="">
+        </header>
+    </div>
+
+    <div class="bg-gray-300 py-2 sm:py-4 mb-10">
+        <nav class="container mx-auto px-10 text-center text-lg">
+            <a class="hover:underline" href="index.html">Inicio</a>
+            <span class="text-gray-500 mx-2 text-base">|</span>
+            <a class="hover:underline" href="recetas.html">Recetas</a>
+            <span class="text-gray-500 mx-2 text-base">|</span>
+            <span class="text-gray-400">Contactar</span>
+        </nav>
+    </div>
+
+    <main class="w-96 p-6 mx-auto px-10 text-xl mb-16">
+        <form>
+            <div class="grid grid-cols-12 mb-5 gap-y-4 gap-x-6">          
+                <label class="col-span-3" for="name">Nombre</label>
+                <input class="col-span-9 border-2 border-gray-400 p-1" id="name" type="text" placeholder="Introduce tu nombre">
+            
+                <label class="col-span-3" for="correo">Email</label>
+                <input class="col-span-9 border-2 border-gray-400 p-1" id="correo" type="email" placeholder="Introduce tu email">
+            
+                <label class="col-span-3" for="mensaje">Mensaje</label>
+                <textarea class="col-span-9 border-2 border-gray-400 p-1" id="mensaje" placeholder="Introduce tu mensaje"></textarea>
+                 
+            </div> 
+            <div class="text-center">
+                <button class="text-white px-3 py-2 hover:bg-green-900 rounded-md uppercase text-lg bg-green-700">Enviar</button>  
+            </div>
+          
+        </form>
+    </main>
+
+
+    <div class="bg-black text-white py-8">
+        <footer class="container px-10">
+            Footer - 2021 ©
+        </footer>        
+    </div>
+
+</body>
+
+</html>
