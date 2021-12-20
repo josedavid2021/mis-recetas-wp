@@ -3,22 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mis recetas | misrecetas.com</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mis recetas de cocina casera">
     <meta name="keywords" content="recetas, cocina casera, gastronomía">
-    <link rel="shortcut icon" href="huevo-frito.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/huevo-frito.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <?php wp_head(); ?>
 </head>
 
 <body>
 
-    hola que tal soy el header
-
     <div class="container mx-auto px-10">
         <header class="flex justify-center my-5">
-            <img class="h-16 sm:h-28" src="images/logo.png" alt="">
+            <img class="h-16 sm:h-28" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="">
         </header>
     </div>
 
