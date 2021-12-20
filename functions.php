@@ -7,6 +7,9 @@ if (!function_exists('my_theme_setup')):
         // añadimos title de forma automática
         add_theme_support('title-tag');
 
+        // añadimos imagen destacada / featured image
+        add_theme_support('post-thumbnails');
+
         // añadimos soporte para menú de Wordpress
         register_nav_menus(
             array(
@@ -14,6 +17,8 @@ if (!function_exists('my_theme_setup')):
             )
         );
     }
+
+    
 
 endif;
 add_action('after_setup_theme', 'my_theme_setup');
