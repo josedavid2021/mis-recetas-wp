@@ -9,7 +9,7 @@
     <meta name="keywords" content="recetas, cocina casera, gastronomía">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/huevo-frito.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <?php wp_head(); ?>
+    <?php wp_head(); ?>    
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         </header>
     </div>
 
-    <div class="bg-gray-300 py-2 sm:py-4 mb-10">
+    <!--<div class="bg-gray-300 py-2 sm:py-4 mb-10">
         <nav class="container mx-auto px-10 text-center text-lg">
             <span class="text-gray-400">Inicio</span>
             <span class="text-gray-500 mx-2 text-base">|</span>
@@ -30,4 +30,19 @@
             <span class="text-gray-500 mx-2 text-base">|</span>
             <a class="hover:underline" href="contactar.html">Contactar</a>
         </nav>
+    </div>-->
+
+    <div class="bg-gray-300 py-2 sm:py-4 mb-10">
+        <?php 
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'menu-1',
+                    'menu_id' => 'primary-menu',
+                    'container' => 'nav',
+                    'menu_class' => 'flex justify-center',
+                    'container_class' => 'container mx-auto px-10 text-center text-lg',
+                    'after' => '<span class="mx-2 text-gray-400">|</span>'
+                )
+            );
+        ?>
     </div>

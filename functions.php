@@ -10,7 +10,7 @@ if (!function_exists('my_theme_setup')):
         // añadimos soporte para menú de Wordpress
         register_nav_menus(
             array(
-                'menu-1' => esc_html__('Primary', 'misrecetas')
+                'menu-1' => esc_html__('Primary', 'misrecetas')                
             )
         );
     }
