@@ -16,7 +16,9 @@
 
     <div class="container mx-auto px-10">
         <header class="flex justify-center my-5">
-            <img class="h-16 sm:h-28" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="">
+            <a href="<?php echo get_home_url(); ?>">
+                <img class="h-16 sm:h-28" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="">
+            </a>
         </header>
     </div>
 

@@ -6,6 +6,13 @@ if (!function_exists('my_theme_setup')):
         
         // añadimos title de forma automática
         add_theme_support('title-tag');
+
+        // añadimos soporte para menú de Wordpress
+        register_nav_menus(
+            array(
+                'menu-1' => esc_html__('Primary', 'misrecetas')
+            )
+        );
     }
 
 endif;
