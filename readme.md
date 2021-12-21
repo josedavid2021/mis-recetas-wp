@@ -30,4 +30,8 @@
 <label class="grow">Mensaje</label>
     [textarea* your-message class:w-48 class:border-2 class:border-3 class:border-gray-400 class:p-1 placeholder "Mensaje"]
 </div>
+
+<div class="flex justify-center">
+[submit  class:text-white class:px-3 class:py-2 class:hover:bg-green-900 class:rounded-md class:uppercase class:text-lg class:bg-green-700 "Enviar"]
+</div>
 ```
