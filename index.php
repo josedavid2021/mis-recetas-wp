@@ -4,7 +4,7 @@
 
         <?php
         $args = array (
-            'posts_per_page' => 6,
+            'posts_per_page' => 4,
             'post_status' => 'publish',
             'post_type' => 'post'
         );
